@@ -5,8 +5,15 @@ let bodyParser   = require('body-parser');
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 
+
 app.get('/', (req, res) => {
-  res.render('index')
+  function GetValue() {
+    var myarray= new Array("item1","item2","item3");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+    return random
+  }
+  console.log(GetValue())
+  res.render('index', { random: GetValue() })
 })
 
 app.listen(port)
