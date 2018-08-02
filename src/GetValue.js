@@ -6,7 +6,6 @@ function GetValue()
   "London Zoo", "Bath", "Cambridge", "5k/10k Race", "Tough Mudder", "Battersea Park", "Ballie Ballerson", "Lake District", "Boxing Match",
   "The Great Masked Ball", "The Globe", "The Ballet", "Orchestra", "Comedy Club", "Glengarry Glenross", "BBC Proms", "Fleetwood Mack", "Beautiful South");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-    //alert(random);
     document.getElementById("message").innerHTML=random;
 }
 
